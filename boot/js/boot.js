@@ -69,4 +69,4 @@
 
     /////// url management
 
-    window.history.pushState("object or string", "Title", "/new-url");
+    // window.history.pushState("object or string", "Title", "/new-url");
