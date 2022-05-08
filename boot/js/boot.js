@@ -1,6 +1,6 @@
 //var path = document.URL.split('/').slice(0, -1).join('/');
-    var path  = "https://"+window.location.hostname;
 
+    var path  = "https://"+window.location.hostname;
 
     async function boot(url, target){
 
@@ -32,7 +32,7 @@
 
     }
 
- ////////////   load header footer and sidebar
+    ////////////   load header footer and sidebar
 
     $('.boot').each(function(){
         boot($(this).attr('from'), this); 
@@ -50,23 +50,23 @@
         boot('/includes/footer.html', this); 
     })
 
+    ////////////  Add active classes to menu and links
 
-  ////////////  Add active classes to menu and links
+    var url = window.location.pathname,
+    urlRegExp = new RegExp(url.replace(/\/$/,''));    
 
+    $('a').each(function(){
+        if(urlRegExp.test(this.href)){
+            $(this).addClass('active');
+        }
+    });
 
-  var url = window.location.pathname,
-  urlRegExp = new RegExp(url.replace(/\/$/,''));    
-  $('a').each(function(){
-      if(urlRegExp.test(this.href)){
-          $(this).addClass('active');
-      }
-  });
+    $('li a').each(function(){
+        if(urlRegExp.test(this.href)){
+            $(this).addClass('active');
+        }
+    });
 
-  $('li a').each(function(){
-      if(urlRegExp.test(this.href)){
-          $(this).addClass('active');
-      }
-  });
+    /////// url management
 
-  /////// url management
-  window.history.pushState("object or string", "Title", "/new-url");
+    window.history.pushState("object or string", "Title", "/new-url");
