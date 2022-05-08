@@ -39,15 +39,15 @@
     })
 
     $('header, .header').each(function(){
-        boot('/includes/header.html', this); 
+        boot('/boot/includes/header.html', this); 
     })
 
     $('footer, .footer').each(function(){
-        boot('/includes/footer.html', this); 
+        boot('/boot/includes/footer.html', this); 
     })
 
     $('.sidebar').each(function(){
-        boot('/includes/footer.html', this); 
+        boot('/boot/includes/footer.html', this); 
     })
 
     ////////////  Add active classes to menu and links
