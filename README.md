@@ -1,4 +1,5 @@
-# boot
+# Bootpolish - Create Dynamic website with HTML and bootstrap
+
 Run super-fast SEO friendly dynamic website without the backend. Boot is a website starter kit and framework without the problems of a backend. 
 
 Design your own header and footer or select from beautiful pre-built themes.
