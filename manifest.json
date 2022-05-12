@@ -1,6 +1,6 @@
 {
-    "name": "DevTools Tips",
-    "short_name": "DevTools Tips",
+    "name": "",
+    "short_name": "",
     "start_url": "/",
     "categories": [
         "productivity",
@@ -12,7 +12,7 @@
     "background_color": "#ffffff",
     "theme_color": "#ffffff",
     "scope": "/",
-    "description": "A collection of useful cross-browser DevTools tips",
+    "description": "",
     "icons": [
         {
             "src": "/assets/logo-192.png",
