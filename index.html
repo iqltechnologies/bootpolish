@@ -106,7 +106,49 @@
 
                 <!---   INSERT YOUR PAGE HTML HERE  -->
 
+                    <!-- this is a hero section slider -->
+                    <section id="hero" class="d-flex align-items-center">
+                        <div class="container">
+                        <div class="row">
+                            <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1 aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+                                <h1>BootPolish</h1>
+                                <h2>Run super-fast SEO friendly dynamic website without the backend.</h2>
+                                <div class="d-flex justify-content-center justify-content-lg-start"> <a href="#about" class="btn-get-started scrollto">Get Started</a> <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="glightbox btn-watch-video"><i class="fa fa-play-circle"></i><span>Watch Video</span></a></div>
+                            </div>
+                            <div class="col-lg-6 order-1 order-lg-2 hero-img aos-init aos-animate" data-aos="zoom-in" data-aos-delay="200"> <img src="/assets/images/hero-img.png" class="img-fluid animated" alt=""></div>
+                        </div>
+                        </div>
+                    </section>
 
+                    <!-- this is a description section -->
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-8 pt-4">
+                                    <article class="markdown-body entry-content container-lg" itemprop="text"><h1 dir="auto"><a id="user-content-bootpolish" class="anchor" aria-hidden="true" href="#bootpolish"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>This Page is running on BootPolish!</h1>
+                                        <p dir="auto">Run super-fast SEO friendly dynamic website without the backend. Boot is a website starter kit and framework without the problems of a backend.</p>
+                                        <p dir="auto">Design your own header and footer or select from beautiful pre-built themes.</p>
+                                        <p dir="auto">Upload to your server, edit boot.json file and you are good to go.</p>
+                                        <p dir="auto">It's also PWA out of the box</p>
+
+                                        <h2 dir="auto"><a id="user-content-how-to-use" class="anchor" aria-hidden="true" href="#how-to-use"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>How to use</h2>
+                                        <p dir="auto">Simply put your header (excluding header tag) and footer html content in /boot/includes/header.html and /boot/includes/footer.html; copy index.html as starter template for any new page.</p>
+                                        <p dir="auto">Boot will automtically load those header in <code>&lt;header&gt;</code> tag or <code>&lt;footer&gt;</code> tag wherever found.</p>
+                                        <p dir="auto">You can also create something like sidebar, newsletter etc in the same manner and boot will load it wherever it will find the boot class with from attribute.</p>
+                                        <p dir="auto">e.g. <code>&lt;div class="boot" from="/boot/includes/newsletter.html"&gt;&lt;/div&gt;</code></p>
+                                        <h2 dir="auto"><a id="user-content-how-is-it-fast" class="anchor" aria-hidden="true" href="#how-is-it-fast"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>How is it fast?</h2>
+                                        <p dir="auto">Boot will save a copy of the widget and includes in localstorage and load from localstorage first so that page will be active. Once loading has finished, if it is found to be updated, the widget in view will also be updated and update saved for next load.</p>
+                                    </article>
+                            </div>
+
+                            <div class="col-md-4 pt-4">
+                                <h3>Custom sidebar</h3>
+                                <newsletter></newsletter>
+                                <img class="pt-4 ml-5 img-fluid" src="https://via.placeholder.com/450x600/EEEEEE/?Text=Advertisement">
+                            </div>
+                        </div>
+                    </div>
+
+                <!---   END YOUR PAGE HTML HERE  -->
 
 
 

@@ -64,12 +64,14 @@ const debug = 1;
     $('a').each(function(){
         if(urlRegExp.test(this.href)){
             $(this).addClass('active');
+            console.log(this.href)
         }
     });
 
     $('li a').each(function(){
-        if(urlRegExp.test(this.href)){
+        if(urlRegExp.test(this.href) ){
             $(this).addClass('active');
+            
         }
     });
 
@@ -118,6 +120,7 @@ const debug = 1;
             'copyright': Vue.defineAsyncComponent(() => loadModule('/boot/widgets/copyright/copyright.vue', options)),
             'newsletter': Vue.defineAsyncComponent(() => loadModule('/boot/widgets/newsletter/newsletter.vue', options)),
             'menuz': Vue.defineAsyncComponent(() => loadModule('/boot/widgets/menu/menu.vue', options)),
+            'social': Vue.defineAsyncComponent(() => loadModule('/boot/widgets/social/social.vue', options)),
         }
       });
       
